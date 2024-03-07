@@ -27,7 +27,7 @@ test.describe('Smoke suite', () => {
         await expect(managerPage.getAddCustomerBtn).toBeVisible()
     })
 
-    test.only('Login with user', async ({ page }) => {
+    test('Login with user', async ({ page }) => {
         const loginPage = new LoginPage(page)
         const customerPage = new CustomerPage(page)
         const accountPage = new AccountPage(page)
